@@ -30,7 +30,7 @@ Follow these steps to set up the Deepfake Detection System on your local machine
 
 3. **Download the pre-trained model**:  
    📥 [Download Model](https://drive.google.com/uc?id=1A2B3C4D5E6F7G8H9I0J&export=download)  
-   **Note:** After downloading, place the model file in the `models/` directory.
+   **Note:** After downloading, place the model file in the `models/` directory and by the way, the Uploaded_Files folder is empty by default, so Git won’t track it unless there’s something inside. Just make sure to create the folder manually or add a dummy file (like .gitkeep) to keep it in the repo!
 
 4. **Run the application**:
    ```sh
@@ -47,13 +47,12 @@ Follow these steps to set up the Deepfake Detection System on your local machine
 ## 📂 Project Structure
 ```
 Deepfake_detection/
-│── app.py                 # 🎭 Main application script
-│── requirements.txt       # 📜 Dependencies
-│── static/react/          # 🎨 Frontend assets (React-based UI)
-│── models/                # 🧠 Pretrained models for detection
-│── datasets/              # 📂 Training and testing datasets
-│── api/                   # 🔗 REST API implementation
-└── utils/                 # ⚙️ Helper functions and utilities
+│── model/                # 🧠 Pretrained models
+│── static/               # 🎨 Static files (CSS, JS, etc.)
+│── templates/            # 📄 HTML templates for the web UI
+│── Uploaded_Files/       # 📂 Folder for uploaded videos (empty by default)
+│── app.py                # 🎭 Main application script
+│── requirements.txt      # 📜 Dependencies
 ```
 
 ## 🤝 Contributing
